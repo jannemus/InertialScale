@@ -1,4 +1,4 @@
-1. INTRODUCTION
+**1. INTRODUCTION**
 
 Matlab implementation of the scale estimation method presented in:
 
@@ -12,9 +12,9 @@ given the camera poses and inertial measurements. Temporal and
 spatial alignment of the camera and IMU is also performed in the
 process.
 
-2. INPUTS
+**2. INPUTS**
 
-  2.1. Camera poses and timestamps
+  *2.1. Camera poses and timestamps*
 
   Camera poses and timestamps are read from a text file 'poses.txt'.
   Place the file to the folder '/data/dataset_name/poses.txt'. The
@@ -28,7 +28,7 @@ process.
   contain the camera positions (x,y,z). Columns 5-8 contain the
   camera orientations in quaternions (qw,qx,qy,qz).
 
-  2.2. Inertial measurements and timestamps
+  *2.2. Inertial measurements and timestamps*
 
   Angular velocities and accelerations are read from text files
   'gyroscope.txt' and 'accelerometer.txt'. Place files to the folder 
@@ -43,7 +43,7 @@ process.
   colums contain the measurements (x,y,z). Units should be [rad/s] and
   [m/s^2]. Note: inertial and visual timestamp sources can be different.
 
-  2.3. Additional
+  *2.3. Additional*
 
   If the ground truth scale correction factor is known in advance 
   (testing purposes), one can place a text file 'groundtruth.txt' to the 
@@ -51,11 +51,11 @@ process.
   report the error of the scale estimate in percents. The file should
   have a single line containing the scale factor (e.g. 0.02571850).
 
-3. OUTPUTS
+**3. OUTPUTS**
 
   The algorithm will output the estimated scale correction factor,
   gravity vector and bias of the accelerometer. The code will also 
   output the estimated time offset between the camera and IMU (td), 
   as well as the relative rotation between them (R).
 
-4. REQUIREMENTS
+**4. REQUIREMENTS**
